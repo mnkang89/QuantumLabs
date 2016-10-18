@@ -1,0 +1,7 @@
+@import "../node_modules/neal-react/css/base";
+
+.neal-section.subhero.background-subhero {
+  background-color: #E6E7E8;
+  padding: $neal-page-paragraph-margin/2 0;
+  margin-top: -$neal-section-padding-y/2;
+}

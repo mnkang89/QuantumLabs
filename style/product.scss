@@ -1,0 +1,16 @@
+@import "../node_modules/neal-react/css/base";
+
+.neal-hero.jumbotron.background-product {
+  h1 { margin-bottom: 1.5rem; }
+  background-color: $neal-hero-bg-color;
+  background-size: 60%, 25%, 25%;
+  background-repeat: no-repeat;
+  background-color: #fff;
+  background-position: center;
+  height: 70rem;
+  padding-top: 10rem;
+  padding-bottom: 13rem;
+  color: $neal-hero-text-color;
+  margin-bottom: $neal-section-padding-y/2;
+  background-position-y: 30%;
+}

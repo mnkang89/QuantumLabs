@@ -1,0 +1,42 @@
+@import "../../node_modules/neal-react/css/base";
+
+.teammember-box {
+  text-align: center;
+  margin-left: 12px;
+  margin-right: 12px;
+  margin-bottom: 10px;
+}
+
+.font-box {
+  display: block;
+  line-height: 1.45;
+}
+
+.content {
+  margin-bottom: 0;
+}
+
+.teammember-text {
+  position: relative;
+  top: 15px;
+}
+
+.teammember-box img{
+  border-radius: 5px;
+}
+
+.teammember-name {
+  color: #8C3193;
+}
+
+.teammember-status {
+  position: relative;
+  top: 0px;
+  color: black;
+}
+
+.teammember-content {
+  position: relative;
+  top: 0px;
+  color: black;
+}

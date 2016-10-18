@@ -1,0 +1,28 @@
+@import "../node_modules/neal-react/css/base";
+
+.neal-hero.jumbotron.background-usage {
+  h1 { margin-bottom: 1.5rem; }
+  background-color: $neal-hero-bg-color;
+  background-size: cover;
+  background-position: center;
+  height: 50rem;
+  padding-top: 10rem;
+  padding-bottom: 13rem;
+  color: $neal-hero-text-color;
+  margin-bottom: $neal-section-padding-y/2;
+  background-position-y: 30%;
+}
+
+.display-3.usage-h1 {
+  position: relative;
+  top: 10rem;
+  color: black;
+  font-weight: bold;
+}
+
+.lead.usage-p {
+  position: relative;
+  top: 11rem;
+  color: black;
+  font-weight: bold;
+}

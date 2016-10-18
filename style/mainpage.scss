@@ -1,0 +1,19 @@
+@import "../node_modules/neal-react/css/base";
+
+.jumbotron-size {
+  height: 100px;
+}
+
+.mainpage-img {
+}
+
+.mainpage-h1 {
+  position: relative;
+  top: 50px;
+}
+
+.btn.btn-white.mainpage {
+  @include ghost-button(#fff, rgba(#fff, 0.80));
+  position: relative;
+  top: 100px;
+}
