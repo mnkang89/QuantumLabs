@@ -101,7 +101,7 @@ export default class app extends Component {
         </Navbar>
 
         <Hero backgroundImage="../../public/img/background/background.png"
-          className="text-xs-center">
+          className="text-xs-center neal-hero.jumbotron.background-mainpage">
           <img className='mainpage-img' src='../../public/img/logo/qlab_3.png' width='372' height= '175' />
           <h1 className="display-4 mainpage-h1"> Neurotechnology for student</h1>
           <p>
