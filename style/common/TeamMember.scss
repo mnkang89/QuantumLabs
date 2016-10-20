@@ -27,6 +27,12 @@
 
 .teammember-name {
   color: #8C3193;
+  font-weight: normal;
+  font-size: 15;
+}
+
+.teammember-name p{
+  line-height: 1.45;
 }
 
 .teammember-status {
@@ -38,5 +44,5 @@
 .teammember-content {
   position: relative;
   top: 0px;
-  color: black;
+  color: #555;
 }

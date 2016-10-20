@@ -11,10 +11,10 @@ export class TeamMember extends React.Component {
   render() {
     return (
       <div className='teammember-box' >
-        <img src={this.props.imageUrl} width='100%' height='100%' />
+        <img src={this.props.imageUrl} width='102%' height='100%' />
         <div className="teammember-text">
           <div className="teammember-name">
-            <h3><strong>{this.props.name}</strong></h3>
+            <h4>{this.props.name}</h4>
           </div>
           <div className="teammember-status">
             <h6><strong>{this.props.title}</strong></h6>

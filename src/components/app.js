@@ -103,7 +103,7 @@ export default class app extends Component {
         <Hero backgroundImage="../../public/img/background/background.png"
           className="text-xs-center background-mainpage">
           <img className='mainpage-img' src='../../public/img/logo/qlab_3.png' width='372' height= '175' />
-          <h1 className="display-4 mainpage-h1"> Neurotechnology for student</h1>
+          <h1 className="display-4 mainpage-h1"> Neurotechnology for students</h1>
           <p>
           <a href="https://github.com/dennybritz/neal-react" target="_blank" className="btn btn-white mainpage">
             Buy NeuroBoost
@@ -125,74 +125,60 @@ export default class app extends Component {
           className="text-xs-center background-product">
         </Hero>
 
-        <Section className="subhero background-subhero">
-          <ImageList centered>
-            <ImageListItem src="../../public/img/press/cnn-logo.png" url="http://www.cnn.com"/>
-            <ImageListItem src="../../public/img/press/forbes-logo.png" url="http://forbes.com/"/>
-            <ImageListItem src="../../public/img/press/theverge-logo.png" url="http://www.theverge.com/"/>
-            <ImageListItem src="../../public/img/press/techcrunch-logo.jpg" url="http://techcrunch.com/"/>
-          </ImageList>
-        </Section>
-
         <div id='science'></div>
-        <Section>
-          <HorizontalSplit padding="md">
-            <div>
+        <div className="science">
+          <div className="row">
+            <div className="col-md-6" style={styles.science2}>
+            </div>
+            <div className="col-md-6">
               <p className="lead">tES</p>
               <p>Neal is based on <a href="http://v4-alpha.getbootstrap.com/" target="_blank">Bootstrap 4</a> and ships with navbar, hero, footer, sections, horizontal split, pricing tables, customer quotes and other components you need for a landing page. No more repetitive coding! Oh, and it's easy to extend.</p>
             </div>
-            <div>
-            </div>
-            <div>
-              <img src="../../public/img/science/science1.png" width="300" height="300" />
-            </div>
-          </HorizontalSplit>
-        </Section>
-
-        <Section>
-          <HorizontalSplit padding="md">
-            <div>
-              <img src="../../public/img/science/fmri.jpeg" width="300" height="300" />
-            </div>
-            <div></div>
-            <div>
+          </div>
+        </div>
+        <div className="science">
+          <div className="row">
+            <div className="col-md-6">
               <p className="lead">fMRI</p>
               <p>Because you are relying on react.js and third-party integration you don't need a server to host your landing page. Simply upload it to an Amazon S3 bucket, enable website hosting, and it's ready to go!</p>
             </div>
-          </HorizontalSplit>
-        </Section>
-
+            <div className="col-md-6" style={styles.science1}>
+            </div>
+          </div>
+        </div>
         <div id='usage'></div>
         <Hero backgroundImage="../../public/img/usage/usage3.png" className="text-xs-center background-usage">
-          <h1 className="display-3 usage-h1">A wearable device for student</h1>
-          <p className="lead usage-p">Use it 30 minutes a day and stay your focus!</p>
+          <h1 className="display-3 usage-h1">A wearable device for students</h1>
+          <p className="lead usage-p">Use it for 30 minutes a day and keep yourself focused!</p>
         </Hero>
 
         <div id='team'></div>
         <Section className="TeamSection">
-          <div>
-            <h5 className="display-4 team-h5">Meet the Team</h5>
+          <div className="teamText">
+            <h5 className="display-4 team-h5">QuantumLabs Team</h5>
             <h5>We are a passionate team of researchers, engineers ,designers and marketing experts with headquarters in Seoul.</h5>
           </div>
           <br></br>
-
-          <Team>
-            <TeamMember name="Jin Hyuk Han" title="CEO" imageUrl="../../public/img/people/dkLee.png" content="Yonsei Univ."></TeamMember>
-            <TeamMember name="Min Seong Kang" title="CTO" imageUrl="../../public/img/people/dkLee.png" content="Yonsei Univ." ></TeamMember>
-            <TeamMember name="Do kyung Lee" title="CDO / Design" imageUrl="../../public/img/people/dkLee.png" content="Hanyang Univ."></TeamMember>
-            <TeamMember name="Jong Wook Jeong" title="CSO / Sales&Marketing " imageUrl="../../public/img/people/dkLee.png" content="Duke Univ."></TeamMember>
-          </Team>
-          <Team>
-            <TeamMember name="Sang Hoon Han" title="CRO / Ph.D Neuroscience / R&D " imageUrl="../../public/img/people/dkLee.png" content="Duke Univ."></TeamMember>
-            <TeamMember name="Ji Sung Ahn" title="Senior Researcher" imageUrl="../../public/img/people/dkLee.png" content="Yonesi Univ" ></TeamMember>
-            <TeamMember name="Seon Young Jeon" title="Senior Researcher" imageUrl="../../public/img/people/dkLee.png" content="Yonesi Univ"></TeamMember>
-          </Team>
+          <br></br>
+          <div className="teamContainer">
+            <Team>
+              <TeamMember name="Jin Hyuk Han" title="CEO" imageUrl="../../public/img/people/dkLee.png" content="Yonsei Univ."></TeamMember>
+              <TeamMember name="Min Seong Kang" title="CTO" imageUrl="../../public/img/people/dkLee.png" content="Yonsei Univ." ></TeamMember>
+              <TeamMember name="Do kyung Lee" title="CDO / Design" imageUrl="../../public/img/people/dkLee.png" content="Hanyang Univ."></TeamMember>
+              <TeamMember name="Jong Wook Jeong" title="CSO / Sales&Marketing " imageUrl="../../public/img/people/dkLee.png" content="Duke Univ."></TeamMember>
+            </Team>
+            <Team>
+              <TeamMember name="Sang Hoon Han" title="CRO / Ph.D Neuroscience / R&D " imageUrl="../../public/img/people/dkLee.png" content="Duke Univ."></TeamMember>
+              <TeamMember name="Jee Sung Ahn" title="Senior Researcher" imageUrl="../../public/img/people/dkLee.png" content="Yonesi Univ" ></TeamMember>
+              <TeamMember name="Suhn Young Jun" title="Senior Researcher" imageUrl="../../public/img/people/dkLee.png" content="Yonesi Univ"></TeamMember>
+            </Team>
+          </div>
         </Section>
 
         <div id='contact'></div>
         <Section className="contactSection">
           <div>
-            <h5 className="display-5 team-h5">Contact us</h5>
+            <h5 className="display-4 team-h5">Contact us</h5>
           </div>
           <br></br>
           <div className="row">
@@ -241,3 +227,18 @@ export default class app extends Component {
     );
   }
 }
+
+
+const styles = {
+  science1: {
+    backgroundImage:'url(../../public/img/science/fMRI2.jpeg)',
+    backgroundSize: 'cover',
+    backgroundPosition: 'center'
+
+  },
+  science2: {
+    backgroundImage: 'url(../../public/img/science/neuroscience.jpg)',
+    backgroundSize: 'cover',
+    backgroundPosition: 'center'
+  }
+};
