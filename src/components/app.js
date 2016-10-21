@@ -22,6 +22,7 @@ import {
  } from './common';
 import Contact from './common/Contact';
 import Googlemap from './common/Googlemap';
+import ScienceText from './common/ScienceText';
 
 const Link = Scroll.Link;
 const Element = Scroll.Element;
@@ -131,16 +132,14 @@ export default class app extends Component {
             <div className="col-md-6" style={styles.science2}>
             </div>
             <div className="col-md-6">
-              <p className="lead">tES</p>
-              <p>Neal is based on <a href="http://v4-alpha.getbootstrap.com/" target="_blank">Bootstrap 4</a> and ships with navbar, hero, footer, sections, horizontal split, pricing tables, customer quotes and other components you need for a landing page. No more repetitive coding! Oh, and it's easy to extend.</p>
+              <ScienceText />
             </div>
           </div>
         </div>
         <div className="science">
           <div className="row">
             <div className="col-md-6">
-              <p className="lead">fMRI</p>
-              <p>Because you are relying on react.js and third-party integration you don't need a server to host your landing page. Simply upload it to an Amazon S3 bucket, enable website hosting, and it's ready to go!</p>
+              <ScienceText />
             </div>
             <div className="col-md-6" style={styles.science1}>
             </div>

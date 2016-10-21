@@ -4,14 +4,39 @@
   min-height: 600px;
 }
 
-.fMRI {
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
+.btn.btn-white.ScienceButton {
+  background: none;
+  border: 1px solid #000;
+  color: #000;
+  font-size: 18px;
+  line-height: 26px;
+  border-radius: 3px;
+  padding: 15px 20px;
 }
 
-.tES {
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
+.ScienceTextBox {
+  margin-top: 100px;
+  margin-left: 8.33333%;
+  width: 487px;
+  height: 271px;
+}
+
+.ScienceTextBox h2 {
+  font-size: 48px;
+  font-weight: 200;
+  line-height: 58px;
+}
+
+.ScienceTextBox h3 {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
+  margin-bottom: 14px;
+}
+
+
+.ScienceTextBox p {
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 400;
 }
