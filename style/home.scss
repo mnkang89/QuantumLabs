@@ -22,8 +22,13 @@
   background-size: cover;
   background-position-y: 10%;
   background-position: 50%;
-  margin-bottom: 5rem;
+  margin-bottom: 0rem;
   padding-top: 10rem;
   padding-bottom: 13rem;
   color: #fff;
+}
+
+.neal-hero.jumbotron.home {
+  margin-bottom: 0px;
+  height: 1000px
 }

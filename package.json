@@ -44,7 +44,9 @@
     "react-redux": "^4.0.0",
     "react-router": "^2.0.1",
     "react-scroll": "^1.4.1",
+    "react-slick": "^0.14.5",
     "redux": "^3.0.4",
-    "redux-form": "^6.1.0"
+    "redux-form": "^6.1.0",
+    "slick-carousel": "^1.6.0"
   }
 }

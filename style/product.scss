@@ -1,6 +1,11 @@
 @import "../node_modules/neal-react/css/base";
 
-.neal-hero.jumbotron.background-product {
+
+.neal-hero.jumbotron.jumbotron-fluid.product1 {
+  margin-bottom: 0px;
+}
+
+.neal-hero.jumbotron.background-product2 {
   h1 { margin-bottom: 1.5rem; }
   background-color: $neal-hero-bg-color;
   background-size: 60%, 25%, 25%;
@@ -13,4 +18,13 @@
   color: $neal-hero-text-color;
   margin-bottom: $neal-section-padding-y/2;
   background-position-y: 30%;
+}
+
+.slider_container {
+  margin: 0 auto;
+  background-size: 100%, 100%, 100%;
+}
+
+.slick-dots {
+  margin-bottom: 45px;
 }

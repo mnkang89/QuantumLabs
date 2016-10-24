@@ -1,11 +1,15 @@
 import axios from 'axios';
-import { browserHistory } from 'react-router';
+
+export const SEND_MAIL = 'SEND_MAIL';
 
 const ROOT_URL = 'http://localhost:3090';
 
-export function contactUs({ email, title, content }) {
-  return function(dispatch) {
-    // Submit email/password to the server
-    axios.post(`${ROOT_URL}/contact`, { email, title, content })
-  }
+export function sendMail(props) {
+  console.log('action creator success');
+  const request = axios.post(`${ROOT_URL}/posts`, props);
+
+  return {
+    type: SEND_MAIL,
+    payload: request
+  };
 }

@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Scroll from 'react-scroll';
+import Slider from 'react-slick';
 import {
   App,
   Code,
@@ -23,6 +24,7 @@ import {
 import Contact from './common/Contact';
 import Googlemap from './common/Googlemap';
 import ScienceText from './common/ScienceText';
+import Modal from './common/modal';
 
 const Link = Scroll.Link;
 const Element = Scroll.Element;
@@ -39,13 +41,22 @@ const businessAddress = (
   </address>
 );
 
-
 export default class app extends Component {
   render() {
+    const settings = {
+      dots: true,
+      speed: 1000,
+      slidesToShow: 1,
+      infinite: true,
+      autoplay: true,
+      autoplaySpeed: 5000,
+      dotsClass: 'slick-dots slick-thumb'
+    }
+
     return (
       <App googleAnalyticsKey="UA-42490151-3">
         <Page>
-        <Navbar brand={brandImage}>
+        <Navbar brand={brandImage} >
           <NavItem>
             <Link
               to="product"
@@ -101,15 +112,24 @@ export default class app extends Component {
           </NavItem>
         </Navbar>
 
-        <Hero backgroundImage="../../public/img/background/background.png"
-          className="text-xs-center background-mainpage">
+        <Hero backgroundImage="../../public/img/product/NB1.png"
+          className="text-xs-center home">
           <img className='mainpage-img' src='../../public/img/logo/qlab_3.png' width='372' height= '175' />
           <h1 className="display-4 mainpage-h1"> Neurotechnology for students</h1>
           <p>
-          <a href="https://github.com/dennybritz/neal-react" target="_blank" className="btn btn-white mainpage">
-            Buy NeuroBoost
-          </a>
+          <Link
+            to="buy"
+            spy={true}
+            smooth={true}
+            offset={50}
+            duration={500}>
+            <a href="#" className="btn btn-white mainpage">Buy NeuroBoost</a>
+          </Link>
           </p>
+          <Modal>
+            <h1>12312314221421</h1>
+            <h1>nakdaasadsksa</h1>
+          </Modal>
         </Hero>
 
         <Section className="subhero background-subhero">
@@ -122,9 +142,18 @@ export default class app extends Component {
         </Section>
 
         <div id='product'></div>
-        <Hero backgroundImage="../../public/img/product/product.jpeg"
-          className="text-xs-center background-product">
-        </Hero>
+        <Slider {...settings}>
+          <div>
+            <Hero backgroundImage="../../public/img/product/NB1.png"
+              className="text-xs-center product1"></Hero>
+          </div>
+          <div>
+            <Hero backgroundImage="../../public/img/product/NB1.png"
+              className="text-xs-center product1"></Hero>
+          </div>
+        </Slider>
+
+        <div id='buy'></div>
 
         <div id='science'></div>
         <div className="science">
@@ -154,22 +183,22 @@ export default class app extends Component {
         <div id='team'></div>
         <Section className="TeamSection">
           <div className="teamText">
-            <h5 className="display-4 team-h5">QuantumLabs Team</h5>
+            <h5 className="display-4 team-h5">퀀텀랩스 팀</h5>
             <h5>We are a passionate team of researchers, engineers ,designers and marketing experts with headquarters in Seoul.</h5>
           </div>
           <br></br>
           <br></br>
           <div className="teamContainer">
             <Team>
-              <TeamMember name="Jin Hyuk Han" title="CEO" imageUrl="../../public/img/people/dkLee.png" content="Yonsei Univ."></TeamMember>
-              <TeamMember name="Min Seong Kang" title="CTO" imageUrl="../../public/img/people/dkLee.png" content="Yonsei Univ." ></TeamMember>
-              <TeamMember name="Do kyung Lee" title="CDO / Design" imageUrl="../../public/img/people/dkLee.png" content="Hanyang Univ."></TeamMember>
-              <TeamMember name="Jong Wook Jeong" title="CSO / Sales&Marketing " imageUrl="../../public/img/people/dkLee.png" content="Duke Univ."></TeamMember>
+              <TeamMember name="한진혁" title="CEO" imageUrl="../../public/img/people/dkLee.png" content="Yonsei Univ."></TeamMember>
+              <TeamMember name="강민성" title="CTO" imageUrl="../../public/img/people/dkLee.png" content="Yonsei Univ." ></TeamMember>
+              <TeamMember name="이도경" title="CDO / Design" imageUrl="../../public/img/people/dkLee.png" content="Hanyang Univ."></TeamMember>
+              <TeamMember name="정종욱" title="CSO / Sales&Marketing " imageUrl="../../public/img/people/dkLee.png" content="Duke Univ."></TeamMember>
             </Team>
             <Team>
-              <TeamMember name="Sang Hoon Han" title="CRO / Ph.D Neuroscience / R&D " imageUrl="../../public/img/people/dkLee.png" content="Duke Univ."></TeamMember>
-              <TeamMember name="Jee Sung Ahn" title="Senior Researcher" imageUrl="../../public/img/people/dkLee.png" content="Yonesi Univ" ></TeamMember>
-              <TeamMember name="Suhn Young Jun" title="Senior Researcher" imageUrl="../../public/img/people/dkLee.png" content="Yonesi Univ"></TeamMember>
+              <TeamMember name="한상훈" title="CRO / Ph.D Neuroscience / R&D " imageUrl="../../public/img/people/dkLee.png" content="Duke Univ."></TeamMember>
+              <TeamMember name="안지성" title="Senior Researcher" imageUrl="../../public/img/people/dkLee.png" content="Yonesi Univ" ></TeamMember>
+              <TeamMember name="전선영" title="Senior Researcher" imageUrl="../../public/img/people/dkLee.png" content="Yonesi Univ"></TeamMember>
             </Team>
           </div>
         </Section>
@@ -237,6 +266,16 @@ const styles = {
   },
   science2: {
     backgroundImage: 'url(../../public/img/science/neuroscience.jpg)',
+    backgroundSize: 'cover',
+    backgroundPosition: 'center'
+  },
+  product1: {
+    backgroundImage:'url(../../public/img/product/NB1.png)',
+    backgroundSize: 'cover',
+    backgroundPosition: 'center'
+  },
+  product2: {
+    backgroundImage: 'url(../../public/img/product/NB1.png)',
     backgroundSize: 'cover',
     backgroundPosition: 'center'
   }
